@@ -11,16 +11,59 @@ let users = [
     id: uuidv4(),
     name: "Anurup",
     email: "anu@gmail.com",
-    role: "1",
+    role: "Admin",
     status: "Active",
   },
   {
     id: uuidv4(),
     name: "Biswas",
     email: "bis@gmail.com",
-    role: "2",
+    role: "Editor",
     status: "Inactive",
   },
+  {
+    id: uuidv4(),
+    name: "joy",
+    email: "joy@gmail.com",
+    role: "HR",
+    status: "Active",
+  },
+  {
+    id: uuidv4(),
+    name: "Chayan",
+    email: "cha@gmail.com",
+    role: "Frontend Developer",
+    status: "Inactive",
+  },
+  {
+    id: uuidv4(),
+    name: "Rahul",
+    email: "ra@gmail.com",
+    role: "Backend Developer",
+    status: "Active",
+  },
+  {
+    id: uuidv4(),
+    name: "Shubham",
+    email: "su@gmail.com",
+    role: "Tester",
+    status: "Inactive",
+  },
+  {
+    id: uuidv4(),
+    name: "Roy",
+    email: "roy@gmail.com",
+    role: "Manager",
+    status: "Active",
+  },
+  {
+    id: uuidv4(),
+    name: "Das",
+    email: "das@gmail.com",
+    role: "Founder",
+    status: "Inactive",
+  },
+
 ];
 
 let roles = [
@@ -30,6 +73,41 @@ let roles = [
     permissions: ["Users:Read", "Users:Write", "Users:Delete"],
   },
   { id: "2", name: "Editor", permissions: ["Users:Read", "Users:Write"] },
+  {
+    id: "3",
+    name: "HR",
+    permissions: ["Users:Read", "Users:Write", "Users:Delete"],
+  },
+  {
+    id: "4",
+    name: "Frontend Developer",
+    permissions: ["Users:Write", "Users:Delete"],
+  },
+  {
+    id: "5",
+    name: "Backend Developer",
+    permissions: ["Users:Read", "Users:Write", "Users:Delete"],
+  },
+  {
+    id: "6",
+    name: "Tester",
+    permissions: ["Users:Read", "Users:Write", "Users:Delete"],
+  },
+  {
+    id: "7",
+    name: "Manager",
+    permissions: ["Users:Read", "Users:Delete"],
+  },
+  {
+    id: "8",
+    name: "Founder",
+    permissions: ["Users:Read", "Users:Write", "Users:Delete"],
+  },
+  {
+    id: "9",
+    name: "HR",
+    permissions: ["Users:Read", "Users:Write", "Users:Delete"],
+  },
 ];
 
 let permissions = [
