@@ -117,7 +117,7 @@ let permissions = [
   { id: "4", module: "Reports", actions: ["Read", "Write", "Delete"] },
 ];
 
-// Users Endpoints
+//user endpoint
 mock.onGet("/users").reply(200, users);
 
 mock.onPost("/users").reply((config) => {
@@ -140,7 +140,7 @@ mock.onDelete(/\/users\/\w+/).reply((config) => {
   return [204];
 });
 
-// Roles Endpoints
+// roles endpoints
 mock.onGet("/roles").reply(200, roles);
 
 mock.onPost("/roles").reply((config) => {
@@ -163,7 +163,7 @@ mock.onDelete(/\/roles\/\w+/).reply((config) => {
   return [204];
 });
 
-// Permissions Endpoints
+//permission endpoint
 mock.onGet("/permissions").reply(200, permissions);
 
 export const getUsers = async () => {

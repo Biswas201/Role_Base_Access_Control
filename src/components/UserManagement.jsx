@@ -22,12 +22,12 @@ const UserManagement = () => {
   );
 
   const handleAddUser = () => {
-    setSelectedUser(null); // Reset user data for adding new user
+    setSelectedUser(null); 
     onOpen();
   };
 
   const handleEditUser = (user) => {
-    setSelectedUser(user); // Set user data for editing
+    setSelectedUser(user); 
     onOpen();
   };
 
@@ -37,14 +37,14 @@ const UserManagement = () => {
 
   const handleFormSubmit = (formData) => {
     if (selectedUser) {
-      // Edit user
+      
       setUsers(
         users.map((user) =>
           user.id === selectedUser.id ? { ...user, ...formData } : user
         )
       );
     } else {
-      // Add new user
+      
       setUsers([...users, { ...formData, id: new Date().getTime().toString() }]);
     }
     onClose();

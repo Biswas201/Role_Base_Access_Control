@@ -37,14 +37,12 @@ const AppProvider = ({ children }) => {
     setAuditLogs((prev) => [newLog, ...prev]);
   };
 
-  //add user
   const addUser = async (user) => {
     const response = await axios.post("/users", user);
     setUsers((prev) => [...prev, response.data]);
     console.log(`User Added: ${response.data.name}`);
   };
 
-  //update user
   const updateUser = async (updatedUser) => {
     const response = await axios.put(`/user/${updatedUser.id}`, updatedUser);
     setUsers((prev) =>
@@ -52,19 +50,16 @@ const AppProvider = ({ children }) => {
     );
   };
 
-  // Delete User
   const deleteUser = async (userId) => {
     await axios.delete(`/users/${userId}`);
     setUsers((prev) => prev.filter((user) => user.id !== userId));
   };
 
-  // Add Role
   const addRole = async (role) => {
     const response = await axios.post("/roles", role);
     setRoles((prev) => [...prev, response.data]);
   };
 
-  // Update Role
   const updateRole = async (updatedRole) => {
     const response = await axios.put(`/roles/${updatedRole.id}`, updatedRole);
     setRoles((prev) =>
@@ -72,7 +67,6 @@ const AppProvider = ({ children }) => {
     );
   };
 
-  // Update Role Permissions
   const updateRolePermissions = async (roleId, permissions) => {
     const role = roles.find((r) => r.id === roleId);
     const updatedRole = { ...role, permissions };
@@ -80,7 +74,6 @@ const AppProvider = ({ children }) => {
     setRoles((prev) => prev.map((r) => (r.id === roleId ? response.data : r)));
   };
 
-  // Delete Role
   const deleteRole = async (roleId) => {
     await axios.delete(`/roles/${roleId}`);
     setRoles((prev) => prev.filter((role) => role.id !== roleId));

@@ -111,7 +111,6 @@ const RoleManagement = () => {
         </Tbody>
       </Table>
 
-      {/* Modal for Add/Edit Role */}
       <ModalForm
         isOpen={isOpen}
         onClose={onClose}
