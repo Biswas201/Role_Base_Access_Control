@@ -2,10 +2,9 @@ import axios from "axios";
 import MockAdapter from "axios-mock-adapter";
 import { v4 as uuidv4 } from "uuid";
 
-// Initialize Axios Mock Adapter
+// initialize axios mock adapter
 const mock = new MockAdapter(axios, { delayResponse: 500 });
 
-// Initial Mock Data
 let users = [
   {
     id: uuidv4(),
