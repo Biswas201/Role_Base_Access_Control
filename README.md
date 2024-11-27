@@ -14,6 +14,7 @@ Currently, two official plugins are available:
 ![image alt](https://github.com/Biswas201/Role_Base_Access_Control/blob/c4dffded80fdf8a0af2b76a9c9f556eceba48a32/r4.png)
 ![image alt](https://github.com/Biswas201/Role_Base_Access_Control/blob/c4dffded80fdf8a0af2b76a9c9f556eceba48a32/r5.png)
 ![image alt](https://github.com/Biswas201/Role_Base_Access_Control/blob/c4dffded80fdf8a0af2b76a9c9f556eceba48a32/r6.png)
+![image alt](https://github.com/Biswas201/Role_Base_Access_Control/blob/f0c4756d1dcf10403fb13778a2738a6d8c41a4ac/r7.png)
 
 
   
